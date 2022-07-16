@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFirma">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityFirma">
+
+        <Button
+            android:id="@+id/btnGuardarAF"
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="132dp"
+            android:background="#2196F3"
+            android:text="GUARDAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnMostrarFirmasAF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripcionAF"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/txtDescripcionAF"
+            android:layout_width="386dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="476dp"
+            android:ems="10"
+            android:hint="Ingrese una descripciòn"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/firmaLayout"
+            android:layout_width="383dp"
+            android:layout_height="466dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescripcionAF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMostrarFirmasAF"
+            android:layout_width="190dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="132dp"
+            android:background="#03A9F4"
+            android:text="Mostrar Firmas"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnGuardarAF"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripcionAF"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
